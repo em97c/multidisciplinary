@@ -101,6 +101,7 @@ a:hover {
 }
 
 .hero-overlay {
+  position: relative;  /* Add this */
   width: 590px;
   height: 392px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -115,10 +116,6 @@ a:hover {
   border-radius: 0;
 }
 
-.hero-overlay h1,
-.hero-overlay p {
-  margin: 0.5rem 0;
-}
 
 .hero-img {
   width: 392px;
@@ -151,6 +148,15 @@ a:hover {
 .hero-links a:hover {
   transform: translateY(-3px);
   color: #c4bfbf;
+}
+
+.photo-credit {
+  font-family: 'Ballmer Architype', sans-serif;
+  font-size: 12px;
+  color: #737373;
+  position: absolute;
+  left: 395px; /* 392px img + 3px padding */
+  bottom: 3px;
 }
 
 .site-footer {
