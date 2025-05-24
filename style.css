@@ -17,11 +17,23 @@ a:hover {
 }
 
 .site-header {
-  background: #1e1e1e;
-  padding: 1rem 2rem;
+  background: #000;
+  padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.site-banner {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.site-tagline {
+  font-family: 'Pang Serif', serif;
+  font-size: 101px;
+  color: #c4bfbf;
+  margin: 0;
 }
 
 .nav ul {
@@ -34,8 +46,37 @@ a:hover {
 }
 
 .nav a {
-  font-size: 1.1rem;
+  font-family: 'Mokoto Glitch', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+  display: inline-block;
 }
+
+.nav a:hover {
+  transform: translateY(-3px);
+  color: #c4bfbf;
+}
+
+@media (max-width: 1000px) {
+  .hero-container {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-img,
+  .hero-overlay {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-overlay {
+    padding: 1rem;
+  }
+}
+
 
 .hero {
   background: url('assets/droplets.gif') center center / cover no-repeat;
@@ -43,23 +84,43 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  width: 982px;
+  height: 392px;
+  box-sizing: border-box;
 }
 
 .hero-overlay {
+  width: 590px;
+  height: 392px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 0;
+}
+
+.hero-overlay h1,
+.hero-overlay p {
+  margin: 0.5rem 0;
 }
 
 .hero-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 392px;
+  height: 392px;
   object-fit: cover;
-  border: 3px solid #66ccff;
-  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .projects {
