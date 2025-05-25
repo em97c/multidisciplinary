@@ -28,11 +28,12 @@
     }
 
     .gallery {
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 50px;
-      padding: 4rem 1rem;
-      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .project {
@@ -41,9 +42,7 @@
 
     .project img {
       width: 100%;
-      max-width: 355px;
-      height: auto;
-      max-height: 352px;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       border: 2px solid #333;
     }

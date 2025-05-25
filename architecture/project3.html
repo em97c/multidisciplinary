@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Page</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    @font-face {
+      font-family: 'Pang Serif';
+      src: url('../assets/PangSerif-Regular10_1.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Mokoto Glitch';
+      src: url('../assets/mokoto.regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Ballmer Architype';
+      src: url('../assets/Ballmer ArchiType Regular.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pang Serif', serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    .content-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .content-image {
+      flex: 1 1 40%;
+      max-width: 500px;
+    }
+
+    .content-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .content-text {
+      flex: 1 1 40%;
+      font-family: 'Ballmer Architype', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .site-footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      font-family: 'Ballmer Architype', sans-serif;
+    }
+
+    .site-footer a {
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .site-footer a:hover {
+      transform: translateY(-3px);
+      color: #c4bfbf;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-banner">
+      <h1 class="site-tagline">Multidisciplinary</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../architecture/architecture.html">Architecture</a></li>
+        <li><a href="../cookbook.html">Cookbook</a></li>
+        <li><a href="../gallery/gallery.html">Gallery</a></li>
+        <li><a href="../it.html">IT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-block">
+      <div class="content-image">
+        <img src="../assets/project-image1.jpg" alt="Project Image 1">
+      </div>
+      <div class="content-text">
+        <p>placeholder paragraph 1</p>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <div class="content-image">
+        <img src="../assets/project-image2.jpg" alt="Project Image 2">
+      </div>
+      <div class="content-text">
+        <p>placeholder paragraph 2</p>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <div class="content-image">
+        <img src="../assets/project-image3.jpg" alt="Project Image 3">
+      </div>
+      <div class="content-text">
+        <p>placeholder paragraph 3</p>
+      </div>
+  </section>
+      <div style="text-align: center; padding: 2rem;">
+      <a href="architecture.html" style="font-family: 'Mokoto Glitch', sans-serif; font-size: 16px; color: white; text-decoration: none; transition: transform 0.2s ease, color 0.2s ease; display: inline-block;">
+        &larr; Back to Architecture
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>emma champ 2025 | <a href="mailto:emmachamp97@gmail.com">email</a></p>
+  </footer>
+</body>
+</html>
