@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookbook</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+      font-family: 'Pang Serif';
+      src: url('assets/PangSerif-Regular10_1.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Mokoto Glitch';
+      src: url('assets/mokoto.regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Ballmer Architype';
+      src: url('assets/Ballmer ArchiType Regular.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pang Serif', serif;
+      background-color: #000;
+      color: white;
+    }
+c
+    .site-tagline {
+      font-family: 'Pang Serif', serif;
+      font-size: 101px;
+      color: #c4bfbf;
+      margin: 0;
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    .nav a {
+      font-family: 'Mokoto Glitch', sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav a:hover {
+      transform: translateY(-3px);
+      color: #c4bfbf;
+    }
+
+    .cookbook-panel {
+      background-color: rgba(115, 115, 115, 0.3);
+      width: 90%;
+      max-width: 1012px;
+      height: auto;
+      min-height: 490px;
+      margin: 4rem auto;
+      padding: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .cookbook-panel img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cookbook-panel p {
+      font-family: 'Ballmer Architype', sans-serif;
+      font-size: 16px;
+      color: white;
+      margin: 1.5rem 0;
+    }
+
+    .buy-button {
+      font-family: 'Mokoto Glitch', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      background-color: #000;
+      border: 2px solid #c4bfbf;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .buy-button:hover {
+      transform: translateY(-3px);
+      background-color: #333;
+      color: #c4bfbf;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-banner">
+      <h1 class="site-tagline">Cookbook</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="architecture/architecture.html">Architecture</a></li>
+        <li><a href="cookbook.html">Cookbook</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="it.html">IT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cookbook-panel">
+      <img src="assets/book.jpg" alt="Cover of the cookbook" />
+      <p>A beautifully designed collection of recipes that reflect both simplicity and intention — this cookbook brings warmth, craft, and clarity to the home kitchen.</p>
+      <a href="https://buythebook.com" class="buy-button">Buy Now</a>
+    </section>
+  </main>
+</body>
+</html>
