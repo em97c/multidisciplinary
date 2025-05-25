@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    @font-face {
+      font-family: 'Pang Serif';
+      src: url('../assets/PangSerif-Regular10_1.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Mokoto Glitch';
+      src: url('../assets/mokoto.regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Ballmer Architype';
+      src: url('../assets/Ballmer ArchiType Regular.otf') format('opentype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pang Serif', serif;
+      background-color: #000;
+      color: white;
+    }
+
+    .site-tagline {
+      font-family: 'Pang Serif', serif;
+      font-size: 101px;
+      color: #c4bfbf;
+      margin: 0;
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    .nav a {
+      font-family: 'Mokoto Glitch', sans-serif;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .nav a:hover {
+      transform: translateY(-3px);
+      color: #c4bfbf;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 2px solid #222;
+    }
+
+    .site-footer {
+      background: #1e1e1e;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      font-family: 'Ballmer Architype', sans-serif;
+    }
+
+    .site-footer a {
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .site-footer a:hover {
+      transform: translateY(-3px);
+      color: #c4bfbf;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-banner">
+      <h1 class="site-tagline">Gallery</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../architecture/architecture.html">Architecture</a></li>
+        <li><a href="../cookbook.html">Cookbook</a></li>
+        <li><a href="../gallery/gallery.html">Gallery</a></li>
+        <li><a href="../it.html">IT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-grid">
+      <img src="galleryphotos/img1.jpg" alt="Gallery Image 1">
+      <img src="galleryphotos/img2.jpg" alt="Gallery Image 2">
+      <img src="galleryphotos/img3.jpg" alt="Gallery Image 3">
+      <img src="galleryphotos/img4.jpg" alt="Gallery Image 4">
+      <img src="galleryphotos/img5.jpg" alt="Gallery Image 5">
+      <!-- Add more images as needed -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>emma champ 2025 | <a href="mailto:emmachamp97@gmail.com">email</a></p>
+  </footer>
+</body>
+</html>
