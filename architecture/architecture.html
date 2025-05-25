@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture Projects</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    @font-face {
+      font-family: 'Pang Serif';
+      src: url('../assets/PangSerif-Regular10_1.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Mokoto Glitch';
+      src: url('../assets/mokoto.regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Ballmer Architype';
+      src: url('../assets/Ballmer ArchiType Regular.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Pang Serif', serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 4rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 355px;
+      height: auto;
+      max-height: 352px;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .project-caption {
+      font-family: 'Mokoto Glitch', sans-serif;
+      font-size: 20px;
+      color: white;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .project-caption:hover {
+      transform: translateY(-3px);
+      color: #c4bfbf;
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-banner">
+    <h1 class="site-tagline">Multidisciplinary</h1>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../architecture/architecture.html">Architecture</a></li>
+      <li><a href="../cookbook.html">Cookbook</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../it.html">IT</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section class="gallery">
+      <div class="project">
+        <a href="project1.html">
+          <img src="../assets/project1.jpg" alt="Kitchen Extension">
+          <div class="project-caption">kitchen<br>extension</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="project2.html">
+          <img src="../assets/project2.jpg" alt="Residential Cabin">
+          <div class="project-caption">residential<br>cabin</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="project3.html">
+          <img src="../assets/project3.jpg" alt="WIP Mid-Century Home">
+          <div class="project-caption">wip -<br>mid-century home</div>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
